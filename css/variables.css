@@ -1,0 +1,6 @@
+:root {
+  --primary: rgb(185, 57, 245);
+  --kerning: -0.8px;
+  --horizontal-space: 20px;
+  --main-border: 1px solid lightgray;
+}

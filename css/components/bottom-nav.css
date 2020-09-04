@@ -1,0 +1,42 @@
+.bottom-nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+.bottom-nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  padding: 20px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+.bottom-nav__list__btn a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #2e363e;
+  position: relative;
+}
+
+.bottom-nav__list__btn a span {
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+.bottom-nav__noti {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+}
+.point {
+  top: 0px;
+  right: -5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: red;
+}

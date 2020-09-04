@@ -1,0 +1,16 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 10px;
+}
+.top-bar h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: var(--kerning);
+}
+
+.top-bar__icons span {
+  margin: 12px;
+}

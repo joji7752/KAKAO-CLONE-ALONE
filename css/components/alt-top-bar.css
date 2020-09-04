@@ -1,0 +1,22 @@
+.alt-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 10px;
+}
+.alt-top-bar__column {
+  width: 33%;
+}
+
+.alt-top-bar__title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: var(--kerning);
+  text-align: center;
+}
+.alt-top-bar__search {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 4px;
+}
