@@ -1,0 +1,16 @@
+.main-chat {
+}
+.chat-body {
+  background-color: #abc1d1;
+}
+
+.chat-date {
+  width: 50%;
+  height: 32px;
+  background-color: #8ca1af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  color: white;
+}

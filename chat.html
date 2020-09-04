@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chats</title>
+    <title>chat</title>
   </head>
-  <body>
-    <div class="status-bar">
+  <body class="chat-body">
+    <div class="status-bar status-bar--chat">
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fas fa-wifi"></i>
@@ -22,86 +22,39 @@
       </div>
     </div>
 
-    <header class="top-bar">
-      <h1>Chats</h1>
-      <div class="top-bar__icons">
-        <span><i class="fas fa-search fa-2x"></i></span>
-        <span><i class="far fa-comment-dots fa-2x"></i></span>
-        <span><i class="fas fa-music fa-2x"></i></span>
-        <span
-          ><a href="setting.html"><i class="fas fa-cog fa-2x"></i></a
-        ></span>
+    <header class="alt-top-bar alt-top-bar--chat">
+      <div class="alt-top-bar__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-top-bar__column">
+        <h1 class="alt-top-bar__title">Crush</h1>
+      </div>
+      <div class="alt-top-bar__column">
+        <span>
+          <i class="fas fa-search fa-2x"></i>
+        </span>
+        <span><i class="fas fa-bars fa-2x"></i></span>
+      </div>
       </div>
     </header>
 
-    <main class="main-screen">
-      <a href="chat.html">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
+    <main class="main-screen main-chat">
+      <div class="chat-date">
+         <span>Tuesday, October 5, 2020</span>
+      </div>
+      <div class="chat-talk">
+        <img
               src="data:image/jpeg;base64,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"
-              class="user-component__avatar"
+              class="user-component__avatar user-component__avatar--sm "
             />
-            <div class="user-component__text">
-              <h4 class="user-component__title">Crush</h4>
-              <h6 class="user-component__subtitle">지금 뭐해 자니? 밖이야?</h6>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <span class="user-component__time">21:22</span>
-            <div class="badge">1</div>
-          </div>
-        </div>
-      </a>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://image.chosun.com/sitedata/image/202004/01/2020040105397_0.jpg"
-            class="user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">수현</h4>
-            <h6 class="user-component__subtitle">
-              비긴어게인 코리아 무한재생ㅋㅋ
-            </h6>
-          </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__time">20:18</span>
-          <div class="badge">5</div>
+        <div>
+          <span>Crush</span>
         </div>
       </div>
-    </main>
 
-    <!-- nav>ul>li*4>a -->
-    <nav class="bottom-nav">
-      <ul class="bottom-nav__list">
-        <li class="bottom-nav__list__btn">
-          <a href="friends.html">
-            <i class="far fa-user fa-2x"></i>
-            <span>프렌즈</span></a
-          >
-        </li>
-        <li class="bottom-nav__list__btn">
-          <a href="chats.html">
-            <span class="bottom-nav__noti badge">1</span>
-            <i class="fas fa-comment fa-2x"></i>
-            <span>채팅</span></a
-          >
-        </li>
-        <li class="bottom-nav__list__btn">
-          <a href="find.html"
-            ><i class="fas fa-search fa-2x"></i><span>검색</span></a
-          >
-        </li>
-        <li class="bottom-nav__list__btn">
-          <a href="more.html">
-            <div class="bottom-nav__noti point"></div>
-            <i class="fas fa-ellipsis-h fa-2x"></i><span>더보기</span></a
-          >
-        </li>
-      </ul>
-    </nav>
+    </main>
 
     <div id="no-mobile">
       <span

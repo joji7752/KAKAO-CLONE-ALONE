@@ -2,6 +2,12 @@
   display: flex;
   padding: 10px;
   font-weight: 600;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  z-index: 2;
+  background-color: white;
 }
 .status-bar__column {
   width: 33%;
@@ -18,4 +24,8 @@
 }
 .status-bar__column:nth-child(3) i:nth-child(3) {
   margin-top: 3px;
+}
+
+.status-bar--chat {
+  background-color: #abc1d1;
 }
