@@ -24,3 +24,27 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+.splash {
+  background-color: var(--primary);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  animation: splash-display 1s ease-in-out 0s 1;
+}
+
+@keyframes splash-display {
+  from {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    /* display: none; */
+  }
+}

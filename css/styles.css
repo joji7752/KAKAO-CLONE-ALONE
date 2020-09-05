@@ -23,7 +23,7 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
