@@ -1,7 +1,8 @@
-#no-mobile {
+#no-mobile,
+#no-landscape {
   background-color: var(--primary);
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   position: absolute;
   z-index: 99;
   top: 0px;
@@ -15,6 +16,12 @@
 
 @media screen and (max-width: 645px) {
   #no-mobile {
+    display: none;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #no-landscape {
     display: none;
   }
 }

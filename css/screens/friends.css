@@ -36,8 +36,8 @@
   justify-content: center;
   align-items: center;
   color: white;
-  animation: splash-display 0.1s ease-in-out forwards;
-  animation-delay: 1.5s;
+  animation: splash-display 0.3s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 @keyframes splash-display {
