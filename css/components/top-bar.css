@@ -21,3 +21,16 @@
 .top-bar__icons span {
   margin-left: 20px;
 }
+
+.top-bar__icons .fa-cog:hover {
+  animation: top-bar-cog-move 1s ease-in-out infinite;
+}
+
+@keyframes top-bar-cog-move {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

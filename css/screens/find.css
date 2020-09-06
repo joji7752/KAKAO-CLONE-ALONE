@@ -90,6 +90,27 @@
   right: 8px;
   font-size: 14px;
 }
+
 .open-chat__contents__column-img-heart span {
   margin-left: 5px;
+}
+
+@keyframes icon-heart-move {
+  0% {
+    transform: none;
+    color: white;
+  }
+  50% {
+    transform: scale(1.5);
+    color: red;
+  }
+  100% {
+    transform: none;
+    color: white;
+  }
+}
+
+.open-chat__contents__column-img-heart:hover i {
+  will-change: transform;
+  animation: icon-heart-move 1s ease-in-out infinite;
 }
