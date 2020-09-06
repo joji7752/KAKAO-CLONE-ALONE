@@ -7,4 +7,22 @@
   color: white;
   background-color: red;
   border-radius: 50%;
+  animation: badgemove ease-in-out 2s infinite;
+}
+
+.badge-fixed {
+  animation: none;
+}
+
+@keyframes badgemove {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
 }
